@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+    <meta charset="UTF - 8" />
+    <meta name="viewport" content="whidth=device-whidth, initial-scale = 1.0" />
+
+    <title>Formulario</title>
+  </head>
+
+  <style>
+    body {
+      background-color: blanchedalmond;
+      color: black;
+
+      background-attachment: scroll;
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+  <body>
+    <h1>SITE DE VAGAS</h1>
+
+    <h2>Abaixo, preencha seus dados:</h2>
+    <form method="get" action="teste.jsp">
+      Nome: <br /><input type="text" name="Nome" /> <br />
+      Tel: <br /><input type="number" name="Telefone" /> <br />
+      End: <br /><input type="text" name="Endereço" /> <br />
+      Email: <br /><input type="email" name="Email" /> <br />
+
+      <br />
+
+      <h2>Selecione a vaga desejada:</h2>
+
+      <a href="http://sitedeemprego.com/analista">Analista</a> <br />
+      <img src="imagem/analista.jpeg" height="100" /> <br />
+
+      <a href="http://sitedeemprego.com/auxiliar">Auxiliar</a> <br />
+      <img src="imagem/auxiliar.jpeg" height="100" /> <br />
+
+      <a href="http://sitedeemprego.com/conferente">Conferente</a> <br />
+      <img src="imagem/conferente.jpeg" height="100" /> <br />
+
+      <a href="http://sitedeemprego.com/TI">TI</a> <br />
+      <img src="imagem/TI.jpeg" height="100" /> <br />
+
+      <select>
+        <br />
+
+        <option>Auxiliar de operações</option>
+        <option>Conferente de mercadorias</option>
+        <option>Analista de sistema</option>
+        <option>Técnico em TI</option>
+      </select>
+
+      <br />
+
+      <h1>Tem interesse na vaga?</h1>
+
+      <input type="radio" name="vaga" /> Sim! <br />
+      <input type="radio" name="vaga" /> Não! <br />
+
+      <h1>Quais auxílios deseja adquirir?</h1>
+
+      <h2>
+        ---Lembrete: os auxílios descontam uma porcentagem do pagamento---
+      </h2>
+      <br />
+      <input type="checkbox" name="Plano de Saúde" value="sim" /> Plano de Saúde
+      (30%) <br />
+      <input type="checkbox" name="Plano Odontológico" value="sim" /> Plano
+      Odontológico (10%) <br />
+      <input type="checkbox" name="Vale Transporte" value="sim" /> Vale
+      Transporte (25%) <br />
+      <input type="checkbox" name="Vale Alimentação" value="sim" /> Vale
+      Alimentação (3%) <br />
+
+      <br />
+
+      Data: <input type="date" name="dataInicio" /> <br />
+
+      <br />
+
+      <textarea name="mensagem" rows="10" cols="30">
+Me fale sobre você:</textarea
+      ><br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
